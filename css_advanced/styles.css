@@ -1,0 +1,225 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: url('https://fakeimg.pl/1200x600?text=Hero+Image') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav img {
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header div {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header button {
+    background: #C271FF;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Section: Learn from the pros */
+main section:first-of-type {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+main section:first-of-type h2 {
+    margin-bottom: 40px;
+    color: #C271FF;
+}
+
+main section:first-of-type div div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+main section:first-of-type img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+/* Testimonial */
+main section:nth-of-type(2) {
+    background: #C271FF;
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+main section:nth-of-type(2) img {
+    border-radius: 50%;
+    width: 120px;
+}
+
+main section:nth-of-type(2) blockquote {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Tutorials */
+main section:nth-of-type(3) {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+main section:nth-of-type(3) h2 {
+    margin-bottom: 40px;
+}
+
+main section:nth-of-type(3) div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+main section:nth-of-type(3) div > div {
+    max-width: 250px;
+    background: #fff;
+}
+
+main section:nth-of-type(3) img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Membership */
+main section:nth-of-type(4) {
+    background: #071629;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+main section:nth-of-type(4) h2 {
+    color: #C271FF;
+    margin-bottom: 30px;
+}
+
+main section:nth-of-type(4) div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+main section:nth-of-type(4) img {
+    width: 50px;
+}
+
+main section:nth-of-type(4) button {
+    background: #C271FF;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* FAQ */
+main section:nth-of-type(5) {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+main section:nth-of-type(5) h2 {
+    margin-bottom: 40px;
+}
+
+main section:nth-of-type(5) > div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+main section:nth-of-type(5) h3 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #071629;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer img {
+    width: 120px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+footer i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
