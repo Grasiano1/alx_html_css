@@ -5,6 +5,12 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
+}
+
+/* header{
+    max-width: 1000px;
+} */
+.first-body{
     background: url('./images/headphones_hero_1.jpg');
     width: 100%;
     height: 100vh;
@@ -12,15 +18,12 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-/* header{
-    max-width: 1000px;
-} */
 nav{
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 1rem;
+    padding-top: 2rem;
 }
 .logo{
     width: 160px;
@@ -44,6 +47,7 @@ nav ul li a{
     margin-top: 40vh;
     line-height: 1.5;
     margin-bottom: 10vh;
+    color: white;
 }
 .btn{
     background: #FF6565;
@@ -55,12 +59,13 @@ nav ul li a{
     color: white;
     width: 160px;
 }
-h1,p{
+/* h1,p{
     color: white;
-}
+} */
 .main-text{
     text-align: center;
     line-height: 1.5;
+    color: white;
 }
 a:hover{
     background: #FF6565;
@@ -71,6 +76,55 @@ a:active{
 .btn:active{
     opacity: 0.9;
 }
+
+/* styling the what we do section of the page(our services) */
+.services{
+    width: 100%;
+    height: 30vh;
+    /* max-width: 1000px; */
+}
+.services-text{
+    display: block;
+    text-align: center;
+    margin: 5em auto;
+    padding: 2rem;
+    line-height: 1.5;
+}
+.services-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    margin-bottom: 3em;
+}
+.img-box{
+    flex-basis: 1;
+    line-height: 1.5;
+}
+.img-box img{
+    display: block;
+    /* margin-bottom: 3em; */
+    margin: 0 auto 3em auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 480px){
     body{
@@ -98,4 +152,42 @@ a:active{
         opacity: 0.9;
     }
     
+}
+
+@media(max-width: 480px){
+    .services-img{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+    .img-box{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* creating responsive for tablets */
+@media(min-width:768px){
+    .services-img{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .img-box{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* laptops and destops */
+@media(min-width:1024px){
+    .services-img{
+        display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .img-box{
+        display: block;
+        margin: 0 auto;
+    }
 }
