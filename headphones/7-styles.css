@@ -38,6 +38,20 @@ nav ul li a{
     text-decoration: none;
     color: white;
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
 .main-section{
     text-align: center;
     margin-top: 30vh;
@@ -205,7 +219,54 @@ footer{
 
 
 
+/* ===== Mobile Menu ===== */
+@media (max-width: 480px) {
+  .hamburger {
+    display: flex;
+  }
 
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    width: 180px;
+    text-align: right;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  nav ul.open {
+    max-height: 300px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* Hamburger transforms into "X" */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
 
 
 
@@ -215,9 +276,6 @@ footer{
     }
     nav{
         margin-top: 3vh;
-    }
-    li{
-        display:none;
     }
     .logo{
         display: inline-block;
