@@ -6,10 +6,6 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
-
-/* header{
-    max-width: 1000px;
-} */
 .first-body{
     background: url('./images/headphones_hero_1.jpg');
     width: 100%;
@@ -52,7 +48,7 @@ nav ul li a{
 .btn{
     background: #FF6565;
     display: inline-block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 1rem;
     border-radius: 30px;
     text-decoration: none;
@@ -66,7 +62,7 @@ nav ul li a{
     text-align: center;
     line-height: 1.5;
     color: white;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 a:hover{
     background: #FF6565;
@@ -132,7 +128,8 @@ a:active{
     gap: 6em;
 }
 .results-img img{
-
+    width: 190px;
+    height: 190px;
 }
 
 
